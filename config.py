@@ -46,12 +46,11 @@ def _get_bool(key: str, default: bool = True) -> bool:
 # Required variables (validated later)
 # ─────────────────────────────────────────────
 
-API_ID: int = _get_int("API_ID", 0)  # type: ignore
-API_HASH: str = _get_env("API_HASH", "")
-BOT_TOKEN: str = _get_env("BOT_TOKEN", "")
-ADMIN_ID: int = _get_int("ADMIN_ID", 0)  # type: ignore
-SOURCE_ID: int = _get_int("SOURCE_ID", 0)  # type: ignore
-DEST_ID: int = _get_int("DEST_ID", 0)  # type: ignore
+print("RAW ENV:")
+print("API_ID =", repr(os.getenv("API_ID")))
+print("API_HASH =", repr(os.getenv("API_HASH")))
+print("BOT_TOKEN =", repr(os.getenv("BOT_TOKEN")))
+print("ADMIN_ID =", repr(os.getenv("ADMIN_ID")))
 
 # Multi-source / multi-dest (comma-separated negative IDs, e.g. "-100111,-100222")
 def _parse_id_list(key: str) -> list:
