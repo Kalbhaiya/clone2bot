@@ -1,0 +1,23 @@
+{
+  "filter": {
+    "text": false,
+    "photo": true,
+    "audio": false,
+    "document": false,
+    "video_mp4": true,
+    "video_mkv": false,
+    "voice": false,
+    "video_note": false,
+    "other": false,
+    "sticker": false,
+    "animation": false,
+    "poll": false
+  },
+  "caption_rules": [],
+  "speed": "fast",
+  "webhook_url": null,
+  "extra_sources": [
+    -1003830125312
+  ],
+  "extra_dests": []
+}
